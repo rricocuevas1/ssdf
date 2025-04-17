@@ -11,7 +11,7 @@ def compute_similarity_matrix(data_array, answer_set_q, d, jaccard_sim):
     return similarities
 
 def gradient(x, n, queries, p, m, data_array, K=1, jaccard_sim=True):
-    """Compute the stochastic gradient"""
+    """Double-stochastic estimation of the gradient of F"""
     if p==None:
         q_index = np.random.choice(m)
     else:
