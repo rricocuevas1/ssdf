@@ -2,12 +2,12 @@
 This repository contains the code and data of the paper "Stochastic Submodular Data Forgetting".
 ## Requirements
 ```
-pip install numpy
-pip install scikit-learn
-pip install pandas
-pip install statistics
-pip install dask
-pip install "dask[dataframe]"
+pip3 install numpy
+pip3 install scikit-learn
+pip3 install pandas
+pip3 install statistics
+pip3 install dask
+pip3 install "dask[dataframe]"
 ```
 ## Data Download
 #### REAL DATASETS: 
