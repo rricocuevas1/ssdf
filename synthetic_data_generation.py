@@ -49,7 +49,7 @@ def generate_synthetic_data(n_rows, n_queries):
 
 
 
-
+os.mkdir(os.getcwd()+"/sample_data/synthetic/")
 # Synthetic data (Generate datasets and logs)
 #generate_synthetic_data(n_rows=1000000, n_queries=100000)
 #generate_synthetic_data(n_rows=1000000, n_queries=1000000)
