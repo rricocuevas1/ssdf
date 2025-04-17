@@ -44,5 +44,3 @@ For example: For the lowest budget configuration in Figure 4 (a) of the paper,
 ```
 python3 run_forgetting_round.py flight 1 1 0.1 10000 0 0
 ```
-In this example, $D$ is the full flights dataset, $Q$ is the 25% of the query-log, $B$ is 1% of $|D|$, $T= 2000$, the average answer set diversity is not computed, and both the time taken to build $D*$ and $f(D*)$ are reported.
-
