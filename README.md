@@ -1,8 +1,5 @@
 # Stochastic Submodular Data Forgetting
-<img width="1014" alt="forgetting_round" src="https://github.com/user-attachments/assets/05d6373b-af1d-46c2-ac28-31bd838059c2" />
-
-## Description
-This repository contains the code and data of the paper Stochastic Submodular Data Forgetting.
+This repository contains the code and data of the paper "Stochastic Submodular Data Forgetting".
 ## Requirements
 ```
 pip install numpy
@@ -11,17 +8,24 @@ pip install pandas
 pip install statistics
 ```
 ## Data Download
-REAL DATASETS: The 3 real datatasets are hosted on Google Drive. You can download it using the following link: 
+#### REAL DATASETS: 
+The 3 real datatasets are hosted on Google Drive. You can download it using the following link: 
 - [Download Data](https://drive.google.com/file/d/1YjCt-RZUyEHslqmA3yJHJi-Tk6SNFlbP/view?usp=sharing)
 
 Once you download it please un-zip it and place it in the same directory as the source files.
 
-SYNTHETIC DATASETS: To generate the 5 synthetic datasets please run:
+
+#### SYNTHETIC DATASETS: 
+To generate the 5 synthetic datasets please run:
 ```
 python3 synthetic_data_generation.py
 ```
-## General Usage
-In order to run a data forgetting round execute:
+## Data forgetting round
+### Schematic illustration of a data forgetting round
+<img width="850" alt="forgetting_round" src="https://github.com/user-attachments/assets/05d6373b-af1d-46c2-ac28-31bd838059c2" />
+
+### Executing a data forgetting round
+In order to execute a data forgetting round run:
 ```
 python3 forgetting_round.py [alg_choice] [dataset_choice] [percentage_of_db] [percentage_of_ql] [budget] [n_iterations] [av_stdevs_calculation] [only_time]
 ```
@@ -39,4 +43,5 @@ An example is given in the code snippet below,
 ```
 python3 forgetting_round.py DepDF flight 1 0.25 0.01 2000 0 0
 ```
-In this example, \texttt{DepDF} is run such that $D$ is the full flights dataset, $Q$ is the 25% of the query-log, $B$ is 1% of $|D|$, $T= 2000$, the average answer set diversity is not computed, and both the time taken to build $D*$ and $f(D*)$ are reported.
+In this example, `DepDF` is run such that $D$ is the full flights dataset, $Q$ is the 25% of the query-log, $B$ is 1% of $|D|$, $T= 2000$, the average answer set diversity is not computed, and both the time taken to build $D*$ and $f(D*)$ are reported.
+
