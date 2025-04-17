@@ -29,7 +29,7 @@ python3 synthetic_data_generation.py
 ### Executing a data forgetting round
 In order to run the `IndepDF` and `DepDF` forgetting kernels execute:
 ```
-python3 forgetting_round.py [dataset_choice] [percentage_of_db] [percentage_of_ql] [budget] [n_iterations] [av_stdevs_calculation] [only_time]
+python3 run_forgetting_round.py [dataset_choice] [percentage_of_db] [percentage_of_ql] [budget] [n_iterations] [av_stdevs_calculation] [only_time]
 ```
 The command line arguments correspond to:
 - `[dataset_choice]`: The desired dataset $D$ inside the `sample_data` folder. Select one from the list [flight, photo, wiki, S_1M_100K, S_1M_1M, S_1M_10M, S_5M_10M, S_10M_10M].
@@ -42,7 +42,7 @@ The command line arguments correspond to:
 
 An example is given in the code snippet below,
 ```
-python3 forgetting_round.py flight 1 0.25 0.01 2000 0 0
+python3 run_forgetting_round.py flight 1 0.25 0.01 2000 0 0
 ```
 In this example, $D$ is the full flights dataset, $Q$ is the 25% of the query-log, $B$ is 1% of $|D|$, $T= 2000$, the average answer set diversity is not computed, and both the time taken to build $D*$ and $f(D*)$ are reported.
 
