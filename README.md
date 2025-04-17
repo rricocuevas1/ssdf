@@ -27,7 +27,7 @@ python3 synthetic_data_generation.py
 <img width="850" alt="forgetting_round" src="https://github.com/user-attachments/assets/05d6373b-af1d-46c2-ac28-31bd838059c2" />
 
 ### Executing a data forgetting round
-In order to execute a data forgetting round run:
+In order to run the `IndepDF` and `DepDF` forgetting kernels execute:
 ```
 python3 forgetting_round.py [dataset_choice] [percentage_of_db] [percentage_of_ql] [budget] [n_iterations] [av_stdevs_calculation] [only_time]
 ```
