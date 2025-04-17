@@ -6,6 +6,8 @@ pip install numpy
 pip install scikit-learn
 pip install pandas
 pip install statistics
+pip install dask
+pip install "dask[dataframe]"
 ```
 ## Data Download
 #### REAL DATASETS: 
