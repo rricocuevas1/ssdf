@@ -3,7 +3,7 @@
 > "Stochastic Submodular Data Forgetting." 
 > *SIGMOD*, 2026.
 
-Data forgetting represent the new data reduction paradigm. Dara forgetting routines understand data importance as data usage. That is, the important tuples in a database are those that are frequently used. A schematic illustration of a data forgetting round is shown below.
+Data forgetting represents the new data reduction paradigm. Data forgetting routines understand data importance as data usage. That is, the important tuples in a database are those that are frequently used. A schematic illustration of a data forgetting round is shown below.
 
 <img width="850" alt="forgetting_round" src="https://github.com/user-attachments/assets/05d6373b-af1d-46c2-ac28-31bd838059c2" />
 
