@@ -11,8 +11,8 @@ Data forgetting represents the new data reduction paradigm. Data forgetting rout
 ### Create a virtual environment
 This step is optional but recommended.
 ```bash
-conda create -n taml python=3.9
-conda activate taml
+conda create -n ssdf python=3.9
+conda activate ssdf
 ```
 ### General Requirements:
 ```
