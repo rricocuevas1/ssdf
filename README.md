@@ -54,5 +54,5 @@ The command line arguments correspond to:
 
 For example: For the lowest budget configuration in Figure 4 (a) of the paper,
 ```
-python3 run_forgetting_round.py flight 1 1 0.1 10000 0 0
+python run_forgetting_round.py flight 1 1 0.1 10000 0 0
 ```
