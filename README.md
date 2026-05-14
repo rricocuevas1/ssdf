@@ -35,13 +35,13 @@ Once you download it please un-zip it and place it in the same directory as the 
 #### SYNTHETIC DATASETS: 
 To generate the 5 synthetic datasets please run:
 ```
-python3 synthetic_data_generation.py
+python synthetic_data_generation.py
 ```
 
 ## Executing a data forgetting round
 In order to run the `IndepDF` and `DepDF` forgetting kernels execute:
 ```
-python3 run_forgetting_round.py [dataset_choice] [percentage_of_db] [percentage_of_ql] [budget] [n_iterations] [av_stdevs_calculation] [only_time]
+python run_forgetting_round.py [dataset_choice] [percentage_of_db] [percentage_of_ql] [budget] [n_iterations] [av_stdevs_calculation] [only_time]
 ```
 The command line arguments correspond to:
 - `[dataset_choice]`: The desired dataset $D$ inside the `sample_data` folder. Select one from the list [flight, photo, wiki, S_1M_100K, S_1M_1M, S_1M_10M, S_5M_10M, S_10M_10M].
