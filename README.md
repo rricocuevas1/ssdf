@@ -1,14 +1,28 @@
 # Stochastic Submodular Data Forgetting
-This repository contains the code and data of the paper "Stochastic Submodular Data Forgetting".
-## Requirements
+> R. Rico, A. Siebes, and Y. Velegrakis. 
+> "Stochastic Submodular Data Forgetting." 
+> *SIGMOD*, 2026.
+
+Data forgetting represent the new data reduction paradigm. Dara forgetting routines understand data importance as data usage. That is, the important tuples in a database are those that are frequently used. A schematic illustration of a data forgetting round is ulustrated below.
+<img width="850" alt="forgetting_round" src="https://github.com/user-attachments/assets/05d6373b-af1d-46c2-ac28-31bd838059c2" />
+
+## Installation:
+### Create a virtual environment
+This step is optional but recommended.
+```bash
+conda create -n taml python=3.9
+conda activate taml
 ```
-pip3 install numpy
-pip3 install scikit-learn
-pip3 install pandas
-pip3 install statistics
-pip3 install dask
-pip3 install "dask[dataframe]"
+### General Requirements:
 ```
+pip install numpy
+pip install scikit-learn
+pip install pandas
+pip install statistics
+pip install dask
+pip install "dask[dataframe]"
+```
+
 ## Data Download
 #### REAL DATASETS: 
 The 3 real datatasets are hosted on Google Drive. You can download it using the following link: 
@@ -22,11 +36,8 @@ To generate the 5 synthetic datasets please run:
 ```
 python3 synthetic_data_generation.py
 ```
-## Data forgetting round
-### Schematic illustration of a data forgetting round
-<img width="850" alt="forgetting_round" src="https://github.com/user-attachments/assets/05d6373b-af1d-46c2-ac28-31bd838059c2" />
 
-### Executing a data forgetting round
+## Executing a data forgetting round
 In order to run the `IndepDF` and `DepDF` forgetting kernels execute:
 ```
 python3 run_forgetting_round.py [dataset_choice] [percentage_of_db] [percentage_of_ql] [budget] [n_iterations] [av_stdevs_calculation] [only_time]
